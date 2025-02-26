@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2025.02.13 a las 10:52:52 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.idat.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.idat.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getListCursoRequest">
+      <class ref="pe.edu.idat.ws.objects.GetListCursoRequest"/>
+    </bindings>
+    <bindings scd="tns:getListCursoResponse">
+      <class ref="pe.edu.idat.ws.objects.GetListCursoResponse"/>
+    </bindings>
+    <bindings scd="~tns:cursosoap">
+      <class ref="pe.edu.idat.ws.objects.Cursosoap"/>
+    </bindings>
+    <bindings scd="tns:getCursoRequest">
+      <class ref="pe.edu.idat.ws.objects.GetCursoRequest"/>
+    </bindings>
+    <bindings scd="tns:getCursoResponse">
+      <class ref="pe.edu.idat.ws.objects.GetCursoResponse"/>
+    </bindings>
+    <bindings scd="tns:postCursoRequest">
+      <class ref="pe.edu.idat.ws.objects.PostCursoRequest"/>
+    </bindings>
+    <bindings scd="tns:postCursoResponse">
+      <class ref="pe.edu.idat.ws.objects.PostCursoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

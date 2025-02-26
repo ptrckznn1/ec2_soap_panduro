@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.idat.edu.pe/ws/objects"
+           targetNamespace="http://www.idat.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="studentCourseSoap">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int" />
+            <xs:element name="studentId" type="xs:int" />
+            <xs:element name="courseId" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="getListStudentCourseRequest">
+        <xs:complexType>
+            <xs:sequence />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getListStudentCourseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="listStudentCourses" type="tns:studentCourseSoap" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getStudentCourseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getStudentCourseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentCourse" type="tns:studentCourseSoap" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="postStudentCourseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentCourse" type="tns:studentCourseSoap" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="postStudentCourseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentCourse" type="tns:studentCourseSoap" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
