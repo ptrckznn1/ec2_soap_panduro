@@ -10,9 +10,6 @@ public class StudentCourseConvert {
     public StudentCourse convertirStudentCourseBD(StudentCoursesoap studentCourseSoap) {
         StudentCourse studentCourse = new StudentCourse();
         studentCourse.setId(studentCourseSoap.getId());
-        // Assuming you have methods to set Student and Course by their IDs
-        // studentCourse.setStudent(studentService.findById(studentCourseSoap.getStudentId()));
-        // studentCourse.setCourse(courseService.findById(studentCourseSoap.getCourseId()));
         return studentCourse;
     }
 
